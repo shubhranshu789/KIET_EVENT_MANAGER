@@ -1,0 +1,77 @@
+.Container-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    background-color: #f9f9f9;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .ImgSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Removed the red border */
+    height: 100%;
+  }
+  
+  .ImgSection img {
+    width: 292px;
+    height: 68vh;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .DetailsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border: none; /* Removed the green border */
+    gap: 10px;
+  }
+  
+  .Name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .Description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .EndTime,
+  .Members {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  @media (min-width: 600px) {
+    .Container-Box {
+      flex-direction: row;
+      align-items: center;
+      max-width: 90%;
+      padding: 20px 30px;
+    }
+  
+    .ImgSection {
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+  
+    .DetailsSection {
+      align-items: flex-start;
+    }
+  }
+  
